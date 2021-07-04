@@ -64,18 +64,18 @@ static String findMaxLenEven(String str)
 	// If no even length word is present
 	// then return -1.
 	if (st == -1)
-		return "-1";
+		return "No even length word present";
 	System.out.println( "ST:"+st);
 	return str.substring(st, st + maxlen);
 }
 
 // Driver code
-public static void main(String args[])
-{
-	String str = "Th";
+//public static void main(String args[])
+//{
+//String str = "Hi I am Sujit";
 
-	System.out.println( findMaxLenEven(str));
-}
+//System.out.println( findMaxLenEven(str));
+//}
 }
 
 // This code is contributed by Arnab Kundu
