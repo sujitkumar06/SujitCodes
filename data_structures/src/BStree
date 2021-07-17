@@ -1,0 +1,28 @@
+List<String> name = [‘product1’, ‘prodcut2’,’product3’, ‘product2’, ‘prodcut1’,]
+List<Integer> price = [1,2,3,4,1]
+List<Integer> weight = [1,2,3,4,1]
+
+
+Duplicate product 
+
+
+
+
+Name obj= new obj()
+HashMap <String, Integer> data = new <String, Integer> ();
+data.put(‘product1’, 1);
+data.put(‘prodcut2’, 2);
+data.put(’product3’, 3);
+data.put(‘product2’, 4);
+data.put(‘prodcut1’, 1);
+
+
+Class Product{
+
+String name;
+Integer price;
+Integer weight;
+}
+
+HashMap <Product, Integer> data = new <Product, Integer> ();
+data.put(‘product1’,price,weight, 1);

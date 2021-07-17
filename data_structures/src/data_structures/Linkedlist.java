@@ -25,7 +25,7 @@ class Linkedlist {
 		Node next = null;
 		while (current != null) {
 			next = current.next;
-			current.next = prev;
+			current.next = prev;head)
 			prev = current;
 			current = next;
 		}
