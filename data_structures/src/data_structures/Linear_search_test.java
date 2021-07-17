@@ -2,6 +2,10 @@
  * 
  */
 package data_structures;
+import static org.mockito.Mockito.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.Assert.*;
 
@@ -35,6 +39,21 @@ public class Linear_search_test {
 
 	@Test
 	public void test() {
+		Portfolio portfolio = new Portfolio();
+		List<Stock> stocks = new ArrayList<Stock>();
+	      Stock googleStock = new Stock();
+	      Stock microsoftStock = new Stock();
+
+	      stocks.add(googleStock);
+	      stocks.add(microsoftStock);		
+
+	      //Create the mock object of stock service
+	      StockService stockServiceMock = mock(StockService.class);
+
+		
+		
+		
+		
 		int Arr[]= {1,2};
 		Linear_Search ls=new Linear_Search(Arr,2,2);
 		assertEquals(2,ls.Search());  
