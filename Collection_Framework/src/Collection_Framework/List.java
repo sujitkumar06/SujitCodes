@@ -1,6 +1,8 @@
 package Collection_Framework;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
@@ -10,12 +12,12 @@ public class List {
 
 	public static void main(String[] args) {
 
-    ArrayList<String> Arr_list= new ArrayList<String>();
-    
-    Arr_list.add("Sujit");
-    Arr_list.add("Ajit");
+   ArrayList<String> Arr_list= new ArrayList<String>();
+  //  List<String> Arr_list= Arrays.asList("Sujit");
+   Arr_list.add("Sujit");
+   Arr_list.add("Ajit");
     Arr_list.add("Amit");
-    Arr_list.add("Rohit");
+   Arr_list.add("Rohit");
     Arr_list.add("Sujit");
     
     LinkedList<String> Linked_list= new LinkedList<String>();
@@ -41,7 +43,7 @@ public class List {
     
     System.out.println("Min element: "+min);
     
-    List Synchronized = Collections.synchronizedList(Arr_list);
+   Collection<String> Synchronized = Collections.synchronizedList(Arr_list);
     
     System.out.println("Synchronized list: "+Synchronized);
     
